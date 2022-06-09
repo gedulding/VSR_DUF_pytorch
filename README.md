@@ -9,6 +9,10 @@ According to the author's paper and code, it is converted to pytorch implementat
 
  **本人对论文内容的阅读理解**：https://blog.csdn.net/Gedulding/article/details/124856566
 
+## 数据分享(Vid4和REDS4)：
+链接：https://pan.baidu.com/s/1-SII0L7iZAR0HuVHPuZUnA 
+提取码：i7xz 
+
 ## 代码说明：
 本文主要是对模型中16层深度的代码进行了复现，根据原文作者的代码内容，进行了16层和x4倍的实现。包含前期的数据处理内容，已经基本复现结束，不过在本机上无法进行训练，所以没有进行训练测试，进行了数据size和shape的比较。
 ### 模型部分：(全貌运行查看)
