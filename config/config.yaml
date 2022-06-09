@@ -1,0 +1,23 @@
+data:
+  num_workers: 2
+  train_labels: 'data/train/labels'
+  train_data: 'data/train/data'
+  test_data: 'data/test/data'
+  test_labels: 'data/test/labels'
+
+train:
+  batch_size: 16
+  T_in: 7
+  optimizer: 'adam'
+  epochs: 22
+  adam:
+    lr: 1e-3
+  scheduler:
+    step_size: 11
+    gamma: 0.1
+
+test:
+  batch_size: 1
+  model_filepath: './model/VSR_DUF.pkl'
+
+model:

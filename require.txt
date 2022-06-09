@@ -1,0 +1,5 @@
+tqdm
+numpy
+torch
+scipy
+tensorboardX
