@@ -12,7 +12,7 @@ According to the author's paper and code, it is converted to pytorch implementat
 ## 代码说明：
 本文主要是对模型中16层深度的代码进行了复现，根据原文作者的代码内容，进行了16层和x4倍的实现。包含前期的数据处理内容，已经基本复现结束，不过在本机上无法进行训练，所以没有进行训练测试，进行了数据size和shape的比较。
 ### 模型部分：(全貌运行查看)
-![在这里插入图片描述](https://img-blog.csdnimg.cn/5c369e0f18b7438480ac14775c3bdfe9.png#pic_center =400x500)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/5c369e0f18b7438480ac14775c3bdfe9.png)
 ### 代码运行说明：
 
        >***python main.py --R --L -- resume --path_to_checkpoint***
@@ -30,7 +30,8 @@ According to the author's paper and code, it is converted to pytorch implementat
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/a56199ff64624401b9613253ff84da3e.png)
 
 ### 代码缺陷说明：
-1，代码部分未完全进行实现，主要是集中在最后一部分，获得了filter和高频信息后需要级联，然后恢复出高频图像内容，可以对比原文作者在test.py中G函数的内容实现。已预留此部分内容在net.py中。![在这里插入图片描述](https://img-blog.csdnimg.cn/34a150aa8644492d8483e026324476c2.png)
+1，代码部分未完全进行实现，主要是集中在最后一部分，获得了filter和高频信息后需要级联，然后恢复出高频图像内容，可以对比原文作者在test.py中G函数的内容实现。已预留此部分内容在net.py中。
+![在这里插入图片描述](https://img-blog.csdnimg.cn/34a150aa8644492d8483e026324476c2.png)
 
 2，文章中输入模型的图像大小为32*32，我直接输入了完整图像，未进行裁剪。
 ## 论文实现效果
